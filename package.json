@@ -1,0 +1,17 @@
+{
+  "name": "simple-todos",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "classnames": "^2.2.5",
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.5.4",
+    "react-addons-pure-render-mixin": "^15.5.2",
+    "react-bootstrap": "^0.30.9",
+    "react-dom": "^15.5.4",
+    "react-native-meteor": "^1.0.3"
+  }
+}
