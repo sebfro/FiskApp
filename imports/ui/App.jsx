@@ -9,16 +9,26 @@ const names = ["seb", "ben", "fred","seb", "ben", "fred","seb", "ben", "fred","s
 const listItems = names.map((n) => <Button href="#">{n}</Button>)
 const wellStyles = {margin: '0 auto 10px'};
 
+class logout extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            value: 'Logg ut',
+        };
+    }
+}
 
-const buttonGroupInstance = (
-    <ButtonGroup bsSize="large" justified>
-        <Button href="#" bsStyle="primary">Send inn</Button>
-        <DropdownButton title="Instillinger" id="instillinger-dropdown" bsStyle="primary">
-            <MenuItem eventKey="1" >Profil</MenuItem>
-            <MenuItem eventKey="2" >Logg ut</MenuItem>
-        </DropdownButton>
-    </ButtonGroup>
-);
+    const buttonGroupInstance = (
+        <ButtonGroup bsSize="large" justified>
+            <Button href="#" bsStyle="primary">Send inn</Button>
+            <DropdownButton title="Instillinger" id="instillinger-dropdown" bsStyle="primary" bsSize="large">
+                <MenuItem eventKey="1">Profil</MenuItem>
+                <MenuItem className="logout" onClick={() => this.setState({value: 'Logg in'})}>
+                    {logout.value}
+                </MenuItem>
+            </DropdownButton>
+        </ButtonGroup>
+    );
 
 
 
@@ -29,11 +39,15 @@ export default class List extends React.Component {
         return (
             <div>
                 {buttonGroupInstance}
-             <ButtonGroup bsSize="large" vertical block>
+             <ButtonGroup vertical block>
                  {listItems}
              </ButtonGroup>
             </div>
         );
     }
+<<<<<<< HEAD
 }
 
+=======
+}
+>>>>>>> ff94d50c2a16ce7e9d7f25831961ff88ac9486bb
