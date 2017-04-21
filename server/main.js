@@ -2,10 +2,11 @@ import '../imports/api/tasks.js';
 
 var userDir = {};
 
-var person = {
-    userName : "sebfro",
+var person0 = {
+    userName : "sebfro0",
     userPass : "123"
 }
+
 
 var userName = function(obj){
     return obj.userName;
@@ -34,4 +35,10 @@ function checkIfExist(name, pass){
     }
 
     return added;
+}
+
+function addExampleUsers() {
+    for(var i = 0; i < 5; i++){
+        addNewUser("seb" + i, "123"+i);
+    }
 }

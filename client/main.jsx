@@ -5,6 +5,7 @@ import {Button} from 'react-bootstrap';
 
 import '../imports/startup/accounts-config.js';
 import App from '../imports/ui/App.jsx';
+import Login from '../imports/ui/login.jsx';
 
 
 Meteor.startup(() => {
